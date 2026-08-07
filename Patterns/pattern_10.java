@@ -1,8 +1,14 @@
 public class pattern_10 {
     static void cases(int n)
-    { for(int i =0;i<n;i++)
+    { 
+       
+        for(int i =1;i<=n*2-1;i++)
         {
-            for(int j=0;j<n-i-1;j++)
+            int m=i;
+            if( i > n){
+                   m = 2*n-i;
+            }
+            for(int j=1;j<=m;j++)
             {
                 System.out.print("*");
             }
@@ -10,7 +16,6 @@ public class pattern_10 {
         }
     }
     public static void main(String[] args) {
-        pattern_2.cases(5);
         pattern_10.cases(5);
     }
 }
